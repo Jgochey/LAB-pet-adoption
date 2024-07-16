@@ -252,7 +252,8 @@ const pets = [
           <h5 class="card-title">${pet.name}</h5>
           <p class="card-text">${pet.color}</p>
           <p class="card-text">${pet.specialSkill}</p>
-          
+          <div class="card-footer text-body-secondary">${pet.type}</div>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
         </div>
       </div>`;
   };
@@ -260,4 +261,76 @@ const pets = [
   petCards.innerHTML = domString;
 
 
-  // <div class="card-footer text-body-secondary">${pets.type}</div>
+// Must be able to click one of the 3 buttons, then only the cards that are in the category(type) should show.
+// There needs to be a way to put it back too.
+  const catsButton = document.querySelector("#cat-btn");
+
+  catsButton.addEventListener("click", (event) => {
+    console.log("Cats!");
+  });
+
+  const dogsButton = document.querySelector("#dog-btn");
+
+  dogsButton.addEventListener("click", (event) => {
+    console.log("Dogs!");
+  });
+
+  const dinoButton = document.querySelector("#dino-btn");
+
+  dinoButton.addEventListener("click", (event) => {
+    console.log("Dinos!");
+  });
+
+
+
+
+  // Should be able to remove the selected pet and then reload.
+  // const deleteButton = document.querySelector(".btn-outline-danger");
+
+  // deleteButton.addEventListener("click", (event) => {
+  //   deleteButton.textContent = `Click count: ${pet.id}`;
+  // });
+
+
+
+
+
+// Enter new pet information into the form and then submit.
+// When the submit button is pressed, the data is added to the array and then needs to render again.
+const petForm = document.querySelector("#pet-form");
+
+let petString = `<form>
+  <div class="mb-3">
+  <div id="nameHelp" class="form-text">Add a new pet!</div>
+    <label for="inputName" class="form-label">Name of Pet</label>
+    <input type="name" class="form-control" id="inputName">
+    
+  </div>
+  <div class="mb-3">
+    <label for="inputColor" class="form-label">Color of Pet</label>
+    <input type="color" class="form-control" id="inputColor">
+  </div>
+
+  </div>
+  <div class="mb-3">
+    <label for="inputSpecialSkill class="form-label">Special Skill of Pet</label>
+    <input type="specialSkill" class="form-control" id="specialSkillColor">
+  </div>
+
+  <div class="mb-3">
+  <label for="formFile" class="form-label">Upload a picture</label>
+  <input class="form-control" type="file" id="formFile">
+</div>
+
+  <select class="form-select" aria-label="Default select example">
+  <option selected>Type of Pet</option>
+  <option value="1">Cat</option>
+  <option value="2">Dog</option>
+  <option value="3">Dino</option>
+</select>
+ 
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+`;
+
+petForm.innerHTML = petString;
