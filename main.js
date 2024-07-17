@@ -241,12 +241,18 @@ const pets = [
     }
   ];
 
-  const petCards = document.querySelector("#cards");
 
-  let domString = "";
+// Render function
+const renderToDom = (divId, htmlToRender) => {
+  const selectedDiv = document.querySelector(divId);
+  selectedDiv.innerHTML = htmlToRender;
+};
 
-  for (const pet of pets) {
-    domString += `<div class="card" style="width: 18rem;">
+// Cards to Dom function
+  const cardsOnDom = (pets) => {
+    let domString = "";
+    for (const pet of pets) {
+      domString += `<div class="card" style="width: 18rem;">
         <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
         <div class="card-body">
           <h5 class="card-title">${pet.name}</h5>
@@ -256,30 +262,50 @@ const pets = [
           <button type="button" class="btn btn-outline-danger">Delete</button>
         </div>
       </div>`;
+    }
+  
+    renderToDom("#cards", domString);
   };
 
-  petCards.innerHTML = domString;
+// Filter function
+const filter = (array, typeString) => {
+  const someArray = [];
+
+  array.forEach((item) => {
+    if (item.type === typeString) {
+      someArray.push(item);
+    }
+  });
+  return someArray;
+};
 
 
-// Must be able to click one of the 3 buttons, then only the cards that are in the category(type) should show.
+// Must be able to click one of the buttons, then only the cards that are in the category(type) should show.
 // There needs to be a way to put it back too.
   const catsButton = document.querySelector("#cat-btn");
-
-  catsButton.addEventListener("click", (event) => {
-    console.log("Cats!");
-  });
-
   const dogsButton = document.querySelector("#dog-btn");
-
-  dogsButton.addEventListener("click", (event) => {
-    console.log("Dogs!");
-  });
-
   const dinoButton = document.querySelector("#dino-btn");
+  const allButton = document.querySelector("#all-btn");
 
-  dinoButton.addEventListener("click", (event) => {
-    console.log("Dinos!");
-  });
+  catsButton.addEventListener("click", () => {
+    const catArmy = filter(pets, "cat");
+    cardsOnDom(catArmy);
+    });
+  
+  dogsButton.addEventListener("click", () => {
+    const dogArmy = filter(pets, "dog");
+    cardsOnDom(dogArmy);
+    });
+
+  dinoButton.addEventListener("click", () => {
+    const dinoArmy = filter(pets, "dino");
+    cardsOnDom(dinoArmy);
+    });
+
+  allButton.addEventListener("click", () => {
+      cardsOnDom(pets);
+      });
+
 
 
 
@@ -308,7 +334,7 @@ let petString = `<form>
   </div>
   <div class="mb-3">
     <label for="inputColor" class="form-label">Color of Pet</label>
-    <input type="color" class="form-control" id="inputColor">
+    <input type="string" class="form-control" id="inputColor">
   </div>
 
   </div>
