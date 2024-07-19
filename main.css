@@ -1,5 +1,27 @@
-body {
+.d-inline-flex {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#cards {
+  display: flex;
+  background-color: springgreen;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+html {
+  background-color: springgreen;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  justify-content: space-evenly
+}
+
+#pet-form {
+  background-color: rgba(0, 255, 128, 0.644);
+  border: 5px solid skyblue;
+  padding: 3px;
 }
