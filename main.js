@@ -259,7 +259,7 @@ const renderToDom = (divId, htmlToRender) => {
           <p class="card-text">${pet.color}</p>
           <p class="card-text">${pet.specialSkill}</p>
           <div class="card-footer text-body-secondary">${pet.type}</div>
-          <button type="button" class="btn btn-outline-danger">Delete</button>
+          <button type="button" class="btn btn-outline-danger" id="delete--${pet.id}">Delete</button>
         </div>
       </div>`;
     }
@@ -280,8 +280,6 @@ const filter = (array, typeString) => {
 };
 
 
-// Must be able to click one of the buttons, then only the cards that are in the category(type) should show.
-// There needs to be a way to put it back too.
   const catsButton = document.querySelector("#cat-btn");
   const dogsButton = document.querySelector("#dog-btn");
   const dinoButton = document.querySelector("#dino-btn");
@@ -307,56 +305,40 @@ const filter = (array, typeString) => {
       });
 
 
+const form = document.querySelector("form");
+
+const createPet = (e) => {
+  e.preventDefault();
+
+  const newPetObj = {
+    id: pets.length + 1,
+    name: document.querySelector("#name").value,
+    color: document.querySelector("#color").value,
+    specialSkill: document.querySelector("#skill").value,
+    type: document.querySelector("#type").value,
+    imageUrl: document.querySelector("#picture").value,
+  }
+
+  pets.push(newPetObj);
+  cardsOnDom(pets);
+  form.reset();
+}
+
+form.addEventListener("submit", createPet);
 
 
 
-  // Should be able to remove the selected pet and then reload.
-  // const deleteButton = document.querySelector(".btn-outline-danger");
+const app = document.querySelector("#cards");
+app.addEventListener("click", (e) => {
+  if (e.target.id.includes("delete")) {
+    const [, id] = e.target.id.split("--");
+    const index = pets.findIndex((e) => e.id === Number(id));
+    pets.splice(index, 1);
+    cardsOnDom(pets);
+  }
+});
 
-  // deleteButton.addEventListener("click", (event) => {
-  //   deleteButton.textContent = `Click count: ${pet.id}`;
-  // });
-
-
-
-
-
-// Enter new pet information into the form and then submit.
-// When the submit button is pressed, the data is added to the array and then needs to render again.
-const petForm = document.querySelector("#pet-form");
-
-let petString = `<form>
-  <div class="mb-3">
-  <div id="nameHelp" class="form-text">Add a new pet!</div>
-    <label for="inputName" class="form-label">Name of Pet</label>
-    <input type="name" class="form-control" id="inputName">
-    
-  </div>
-  <div class="mb-3">
-    <label for="inputColor" class="form-label">Color of Pet</label>
-    <input type="string" class="form-control" id="inputColor">
-  </div>
-
-  </div>
-  <div class="mb-3">
-    <label for="inputSpecialSkill class="form-label">Special Skill of Pet</label>
-    <input type="specialSkill" class="form-control" id="specialSkillColor">
-  </div>
-
-  <div class="mb-3">
-  <label for="formFile" class="form-label">Upload a picture</label>
-  <input class="form-control" type="file" id="formFile">
-</div>
-
-  <select class="form-select" aria-label="Default select example">
-  <option selected>Type of Pet</option>
-  <option value="1">Cat</option>
-  <option value="2">Dog</option>
-  <option value="3">Dino</option>
-</select>
- 
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-`;
-
-petForm.innerHTML = petString;
+const startApp = () => {
+  cardsOnDom(pets);
+};
+startApp();

@@ -10,6 +10,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: space-around;
+  gap: 7px;
 }
 
 html {
@@ -20,8 +21,12 @@ html {
   justify-content: space-evenly
 }
 
-#pet-form {
+form, .mb-3 {
   background-color: rgba(0, 255, 128, 0.644);
   border: 5px solid skyblue;
   padding: 3px;
+}
+
+#form-submit {
+  background-color: blue;
 }
