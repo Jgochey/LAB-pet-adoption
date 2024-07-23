@@ -1,4 +1,4 @@
-.d-inline-flex {
+#sortButtons {
   flex-direction: row;
   flex-wrap: wrap;
 }

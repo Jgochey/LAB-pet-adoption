@@ -13,7 +13,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Just picks the tomatoes off of a sandwich instead of requesting a whole new sandwich.",
       type: "dino",
-      imageUrl: "http://www.jozilife.co.za/wp-content/uploads/The-Dino-Expo.jpg",
+      imageUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcomicartcommunity.com%2Fgallery%2Fdata%2Fthumbnails%2F884%2Ftrex2_600.jpg&f=1&nofb=1&ipt=744e6c4e39ab64f902fad177d3df4bd109548ac4c80abf2c12c6dbb610e81d85&ipo=images",
     },
     {
       id: 3,
@@ -61,7 +61,7 @@ const pets = [
       color: "Grey",
       specialSkill: "Comfortable in the outdoors for up to eight hours.",
       type: "dino",
-      imageUrl: "http://www.theouthousers.com/images/jck//ThanosCopter/news/grumpasaur.jpg"
+      imageUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.UkKySAhatFZsMBKdxhPn5QAAAA%26pid%3DApi&f=1&ipt=8194c639f57d12fbe641787bf5f95598f298cd4c713f5fef4d2fc48295944f93&ipo=images"
     },
     {
       id: 9,
@@ -85,7 +85,7 @@ const pets = [
       color: "Orange",
       specialSkill: "Can be around food without staring creepily at it.",
       type: "dino",
-      imageUrl: "http://www.cantref.com/userfiles/events/walking%20dino.jpg?w=600"
+      imageUrl: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fthumb10.shutterstock.com%2Fthumb_large%2F3831761%2F385026343%2Fstock-vector-tyrannosaurus-rex-t-rex-primitive-carnivore-dinosaur-with-separate-color-and-outline-layers-385026343.jpg&f=1&nofb=1&ipt=f47b2f154901c3a89ca27c97e0b7d07bee69a92879b539e2cfece264c6ac6a59&ipo=images"
     },
     {
       id: 12,
@@ -101,7 +101,7 @@ const pets = [
       color: "Red",
       specialSkill: "Expertly quotes and recognizes dialogue from early seasons of The Simpsons.",
       type: "dog",
-      imageUrl: "http://1kjkdg1axrkd2g03cnboj761.wpengine.netdna-cdn.com/wp-content/uploads/2017/12/braydon-anderson-105552-e1512684107659.jpg"
+      imageUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Frotoscopers.com%2Fwp-content%2Fuploads%2F2013%2F01%2FClifford-the-Big-Red-Dog-Illumination.png&f=1&nofb=1&ipt=fbaaf70a96c53d780f3357c97fa66d960e8c320fd790b797a6031a526354896e&ipo=images"
     },
     {
       id: 14,
@@ -125,7 +125,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Drives at a safe rate of speed in snow or rain.",
       type: "dino",
-      imageUrl: "https://images.readwrite.com/wp-content/uploads/2018/03/t-rex-dino-quiz-e1490854556549.jpg"
+      imageUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.for-sale.co.uk%2Fsh-img%2F122445227_10159389066742176_1242455430110995913_o_t%252Brex%252Bdinosaur_thumbnail.jpg&f=1&nofb=1&ipt=0be66852ad81e8a1d216c1d4c5260e23b6ab4652e9d92dc07e71b29edf7599f4&ipo=images"
     },
     {
      id: 17,
@@ -133,7 +133,7 @@ const pets = [
       color: "Yellow",
       specialSkill: "Does not freak out if you haven’t seen his favorite movie (The Big Lebowski).",
       type: "cat",
-      imageUrl: "http://www.funnycatsite.com/pictures/Close_Up_Yawn.jpg"
+      imageUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Frender.fineartamerica.com%2Fimages%2Frendered%2Fsmall%2Fprint%2Fimages%2Fartworkimages%2Fsquare%2F1%2Fthe-yellow-cat-laurie-with.jpg&f=1&nofb=1&ipt=af3ff19c891fc89114d0ec629c2e961a841a7529a6477f37785efc3b1503e057&ipo=images"
     },
     {
       id: 18,
@@ -141,7 +141,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Proficient in air guitar",
       type: "dino",
-      imageUrl: "https://www.nation.co.ke/image/view/-/4078922/highRes/1742693/-/maxw/600/-/1453yvh/-/DINO.jpg"
+      imageUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2012%2F04%2F30%2F11%2F08%2Fbrown-44833_960_720.png&f=1&nofb=1&ipt=f12dd57bf228f04edbf648b8fea55731cd29b0aa1c06563acc0e98b99bb3ac35&ipo=images"
     },
     {
       id: 19,
@@ -149,7 +149,7 @@ const pets = [
       color: "Blue",
       specialSkill: "Listens attentively to boring stories.",
       type: "dog",
-      imageUrl: "http://dailynewsdig.com/wp-content/uploads/2014/03/Creative-And-Funny-Dog-Stock-Photography-Pictures-2.jpg"
+      imageUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.miraheze.org%2Fgreatcharacterswiki%2F5%2F56%2FVlcsnap-2020-12-31-23h58m52s398.png&f=1&nofb=1&ipt=4a6c6570fba4bff2ce987a2384d15b37bb73f87c399836e4d27129ff0756dd60&ipo=images"
     },
     {
       id: 20,
@@ -157,7 +157,7 @@ const pets = [
       color: "Black",
       specialSkill: "Uses litter box at appropriate hours.",
       type: "cat",
-      imageUrl: "http://www.funnycatsite.com/pictures/Lazy_White_Cat.jpg"
+      imageUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.petplan.co.uk%2Fimages%2Fthumbs%2Fmixed-sizes%2F2023%2F7-famous-fictional-cats%2Fsalem.jpg&f=1&nofb=1&ipt=9f927f9afd2c72f8bca13631e3d245a1b4e83f79feb8640f03d73817b8c0507d&ipo=images"
     },
     {
       id: 21,
@@ -165,7 +165,7 @@ const pets = [
       color: "Red",
       specialSkill: "Owns a Nintendo Power Glove.",
       type: "dino",
-      imageUrl: "https://img.buzzfeed.com/buzzfeed-static/static/2015-11/2/12/enhanced/webdr15/anigif_enhanced-29802-1446485228-10.gif?crop=250:165;0,0&downsize=715"
+      imageUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn4.vectorstock.com%2Fi%2Fthumbs%2F78%2F43%2Fdinosaur-with-sharp-teeth-vector-6007843.jpg&f=1&nofb=1&ipt=76a69d5c6b6682a45f78aa92adbaa2344adaf0106590b5fbd81c88189a3b6a51&ipo=images"
     },
     {
         id: 22,
@@ -173,7 +173,7 @@ const pets = [
       color: "Orange",
       specialSkill: "Is comfortable with jokes about his receding hairline.",
       type: "cat",
-      imageUrl: "http://funnyanimalphoto.com/wp-content/uploads/2013/08/cat_caught_mouse_thegatewaypundit.jpg"
+      imageUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.lostfoundmcleancounty.org%2Fwp-content%2Fuploads%2F2015%2F09%2F2015-09-02_55e65f14da9b5_91cat-150x150.jpg&f=1&nofb=1&ipt=6be5bbe06da9270edc7c0be9c02421af6976f1c35f971d2c52d7fed9fa581ad1&ipo=images"
     },
     {
         id: 23,
@@ -189,7 +189,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Participates in karaoke but does not force others to go out to karaoke.",
       type: "dog",
-      imageUrl: "http://www.dogbreedplus.com/dog_breeds/images/basset-hound-4.jpg"
+      imageUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D100064047935040&f=1&nofb=1&ipt=34092b03fe07dd9aa45213955e647ae9a58e8dc2acddbddf9ed9f53f154ab3e1&ipo=images"
     },
     {
       id: 25,
@@ -197,7 +197,7 @@ const pets = [
       color: "Red",
       specialSkill: "Knows the words to 4 rap songs.",
       type: "cat",
-      imageUrl: "http://funbk.s3.amazonaws.com/wp-content/uploads/2016/06/funny-cat-video-which-will-make-you-laugh-louder.jpg"
+      imageUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F7b%2F06%2F71%2F7b06717da660431b65302c4ae3e9ad73.jpg&f=1&nofb=1&ipt=18875a1836a202cab76a78620487e5f7b8e1a53b12f2bb72782dd3792d2636bb&ipo=images"
     },
     {
         id: 26,
@@ -237,18 +237,20 @@ const pets = [
       color: "Red",
       specialSkill: "Doesn’t get weirded out by the word “moist.”",
       type: "dino",
-      imageUrl: "http://lsae2.iypcdn.com/static//modules/uploads/photos/language1/dino-live-22.jpg?119"
+      imageUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.listchallenges.com%2Ff%2Fitems2020%2Ff8134c67-9c2d-4313-b6af-e1cb7bbc93ec.jpg&f=1&nofb=1&ipt=8a3bdaca0f2faedde98156e55cfb7f0c6bb775a9826f1baa6884b168d6824044&ipo=images"
     }
   ];
 
 
-// Render function
+// Render function: Creates a new variable (selectedDiv) to store the HTML div. Then renders whatever you pass in second to the HTML itself.
 const renderToDom = (divId, htmlToRender) => {
   const selectedDiv = document.querySelector(divId);
   selectedDiv.innerHTML = htmlToRender;
 };
 
-// Cards to Dom function
+// Cards to Dom function: Looks at the pets object and then runs a function.
+// The domString is set to empty, then the object is looped through to get the element attributes.
+// These are then assigned to the domString, which is rendered in the specified HTML by the renderToDom function.
   const cardsOnDom = (pets) => {
     let domString = "";
     for (const pet of pets) {
@@ -267,7 +269,8 @@ const renderToDom = (divId, htmlToRender) => {
     renderToDom("#cards", domString);
   };
 
-// Filter function
+// Filter function: Creates an empty array and assigns elements to it by looking for them inside an array.
+// See the pet buttons below.
 const filter = (array, typeString) => {
   const someArray = [];
 
@@ -285,6 +288,8 @@ const filter = (array, typeString) => {
   const dinoButton = document.querySelector("#dino-btn");
   const allButton = document.querySelector("#all-btn");
 
+  // The filter function looks for each animal contained in pets and assigns them to their own array.
+  // This new array is then rendered on the dom.
   catsButton.addEventListener("click", () => {
     const catArmy = filter(pets, "cat");
     cardsOnDom(catArmy);
@@ -304,12 +309,14 @@ const filter = (array, typeString) => {
       cardsOnDom(pets);
       });
 
-
+// Targeting the form on the HTML.
 const form = document.querySelector("form");
 
+// The (e) is an event the function is waiting for to start running. In this case, clicking submit.
 const createPet = (e) => {
   e.preventDefault();
 
+  // Collects information from the form and then pushes it into its own new object on the array.
   const newPetObj = {
     id: pets.length + 1,
     name: document.querySelector("#name").value,
@@ -328,17 +335,17 @@ form.addEventListener("submit", createPet);
 
 
 
-const app = document.querySelector("#cards");
-app.addEventListener("click", (e) => {
-  if (e.target.id.includes("delete")) {
-    const [, id] = e.target.id.split("--");
-    const index = pets.findIndex((e) => e.id === Number(id));
-    pets.splice(index, 1);
-    cardsOnDom(pets);
+const app = document.querySelector("#cards"); //Looking at the already established #cards
+app.addEventListener("click", (e) => { // When there is a click, run the function.
+  if (e.target.id.includes("delete")) { // Look for the delete button on the HTML.
+    const [, id] = e.target.id.split("--"); // Seperator so that "delete" is not returned along with the ID which is what we actually want.
+    const index = pets.findIndex((e) => e.id === Number(id)); //Turn the ID string into an actual number.
+    pets.splice(index, 1); // Add the new pet to the pets object.
+    cardsOnDom(pets); // Render everything again, this time with the new pet.
   }
 });
 
 const startApp = () => {
   cardsOnDom(pets);
-};
+}
 startApp();
