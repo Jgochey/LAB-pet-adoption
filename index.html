@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <p class="d-inline-flex gap-1">
+  <p class="d-inline-flex gap-1" id="sortButtons">
     <button type="button" id="cat-btn" style="background-color: lightskyblue; color: white" class="btn" data-bs-toggle="button">Cats</button>
     <button type="button" id="dog-btn" style="background-color: limegreen; color: white;" class="btn" data-bs-toggle="button">Dogs</button>
     <button type="button" id="dino-btn" style="background-color: orange; color: white;" class="btn" data-bs-toggle="button">Dinos</button>
@@ -19,7 +19,6 @@
   <div id="cards">
 
   </div>
-
 
     <form>
       <div class="form-floating mb-3">
@@ -38,8 +37,12 @@
       </div>
 
       <div class="form-floating mb-3">
-        <input type="text" class="form-control" id="type" placeholder="Type" required>
-        <label for="floatingInput">Type of Pet: Cat/Dog/Dino</label>
+        <select class="form-select" id="type" aria-label="Default select example" required>
+          <option selected>Select type of pet</option>
+          <option value="cat">Cat</option>
+          <option value="dog">Dog</option>
+          <option value="dino">Dino</option>
+        </select>
       </div>
 
       <div class="form-floating mb-3">
