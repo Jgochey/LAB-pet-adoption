@@ -1,6 +1,13 @@
 #sortButtons {
   flex-direction: row;
   flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin: 5px;
+}
+
+.btn {
+  width: 200px;
 }
 
 #cards {
@@ -11,6 +18,11 @@
   justify-content: space-around;
   align-content: space-around;
   gap: 7px;
+}
+
+#cards img {
+  width: 100%;
+  height: 220px;
 }
 
 html {
