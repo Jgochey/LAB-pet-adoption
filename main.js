@@ -8,7 +8,7 @@ const pets = [
       imageUrl: "http://kittentoob.com/wp-content/uploads/2015/06/funny-cat-with-a-towel.jpg",
     },
     {
-        id: 2,
+      id: 2,
       name: "Trouble",
       color: "Brown",
       specialSkill: "Just picks the tomatoes off of a sandwich instead of requesting a whole new sandwich.",
@@ -242,7 +242,8 @@ const pets = [
   ];
 
 
-// Render function: Creates a new variable (selectedDiv) to store the HTML div. Then renders whatever you pass in second to the HTML itself.
+// Render function: Creates a new variable (selectedDiv) to store the HTML div.
+// Whatever you pass into the second argument will then be rendered to the HTML itself.
 const renderToDom = (divId, htmlToRender) => {
   const selectedDiv = document.querySelector(divId);
   selectedDiv.innerHTML = htmlToRender;
@@ -345,6 +346,8 @@ app.addEventListener("click", (e) => { // When there is a click, run the functio
   }
 });
 
+
+// Renders the pet cards as soon as the page is open, without this you would have to press one of the buttons to see anything.
 const startApp = () => {
   cardsOnDom(pets);
 }
